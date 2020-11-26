@@ -90,10 +90,71 @@
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("console.log('Hello');\n\n//# sourceURL=webpack:///./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _routes_routes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./routes/routes */ \"./src/routes/routes.js\");\n\nwindow.addEventListener('load', _routes_routes__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/pages/Error404.js":
+/*!*******************************!*\
+  !*** ./src/pages/Error404.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst Error404 = () => {\n  const view = `\n\t\t<p>Error404</p>\n\t`;\n  return view;\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Error404);\n\n//# sourceURL=webpack:///./src/pages/Error404.js?");
+
+/***/ }),
+
+/***/ "./src/pages/Home.js":
+/*!***************************!*\
+  !*** ./src/pages/Home.js ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst Home = () => {\n  const view = `\n\t\t<p>CONTENT</p>\n\t`;\n  return view;\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Home);\n\n//# sourceURL=webpack:///./src/pages/Home.js?");
+
+/***/ }),
+
+/***/ "./src/routes/routes.js":
+/*!******************************!*\
+  !*** ./src/routes/routes.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _templates_Header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../templates/Header */ \"./src/templates/Header.js\");\n/* harmony import */ var _pages_Home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../pages/Home */ \"./src/pages/Home.js\");\n/* harmony import */ var _templates_Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../templates/Footer */ \"./src/templates/Footer.js\");\n/* harmony import */ var _pages_Error404__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../pages/Error404 */ \"./src/pages/Error404.js\");\n\n\n\n\n\nconst routes = async () => {\n  const header =  false || document.getElementById('header');\n  const content =  false || document.getElementById('content');\n  const footer =  false || document.getElementById('footer');\n  header.innerHTML = await Object(_templates_Header__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n  content.innerHTML = await Object(_pages_Home__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n  footer.innerHTML = await Object(_templates_Footer__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (routes);\n\n//# sourceURL=webpack:///./src/routes/routes.js?");
+
+/***/ }),
+
+/***/ "./src/templates/Footer.js":
+/*!*********************************!*\
+  !*** ./src/templates/Footer.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst Footer = () => {\n  const view = `\n\t\t<p>Make with Coffe</p>\n\t`;\n  return view;\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Footer);\n\n//# sourceURL=webpack:///./src/templates/Footer.js?");
+
+/***/ }),
+
+/***/ "./src/templates/Header.js":
+/*!*********************************!*\
+  !*** ./src/templates/Header.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst Header = () => {\n  const view = `\n\t\t<a target=\"_balnk\" href=\"https://github.com/gasparnd/\" class=\"user\">gasparnd</a>\n\t`;\n  return view;\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Header);\n\n//# sourceURL=webpack:///./src/templates/Header.js?");
 
 /***/ })
 
