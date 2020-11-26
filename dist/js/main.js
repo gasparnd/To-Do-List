@@ -151,7 +151,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nvar Error404 = function Error
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nvar Home = function Home() {\n  var view = \"\\n\\t\\t<p>CONTENT</p>\\n\\t\";\n  return view;\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Home);\n\n//# sourceURL=webpack:///./src/pages/Home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nvar Home = function Home() {\n  var view = \"\\n\\t\\t<div>\\n\\t\\t\\t<input type=\\\"textarea\\\" name=\\\"\\\" placeholder=\\\"Enter your note\\\">\\n\\t\\t</div>\\n\\t\\t<h2>Your List</h2>\\n\\t\\t<div>\\n\\t\\t\\t\\n\\t\\t</div>\\n\\t\";\n  return view;\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Home);\n\n//# sourceURL=webpack:///./src/pages/Home.js?");
 
 /***/ }),
 
