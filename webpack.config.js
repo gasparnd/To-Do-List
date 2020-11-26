@@ -10,7 +10,7 @@ module.exports = {
 	},
 	devServer: {
 		contentBase: 'dist/',
-		open: true,
+		/*open: true,*/
 		port: '9080'
 	},
 	module: {
