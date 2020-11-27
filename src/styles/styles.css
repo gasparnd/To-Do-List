@@ -1,4 +1,4 @@
-/*@font-face {
+@font-face {
   font-family: 'icomoon';
   src:  url('../../fonts/icomoon.eot?j8xsg');
   src:  url('../../fonts/icomoon.eot?j8xsg#iefix') format('embedded-opentype'),
@@ -31,7 +31,7 @@
 }
 .icon-check:before {
   content: "\e902";
-}*/
+}
 
 * {
 	margin: 0;
@@ -104,8 +104,21 @@ main {
 
 .done-activity,
 .delate-activity {
-	width: 25px;
-	border: 1px solid blue;
+	border: 1px solid #000;
 	margin: .5rem 0;
 	margin-right: .5rem;
 }
+
+.icon-check {
+	color: green;
+}
+
+.icon-trash {
+	color: red;
+}
+
+.icon-check,
+.icon-trash {
+	font-size: 1.5rem;
+}
+

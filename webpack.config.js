@@ -1,4 +1,5 @@
 const path = require('path')
+const webpack = require('webpack')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
@@ -24,6 +25,17 @@ module.exports = {
 					},
 					'css-loader'
 				]	
+			},
+			{
+				test: /\.eot|svg|ttf|woff/,
+				use: {
+					loader: 'url-loader',
+					options: {
+						limit: 10000,
+						outputPath: 'assets/',
+						name: '[name].[ext]'
+					}
+				}
 			},
 			{
 				test: /\.js$/,
