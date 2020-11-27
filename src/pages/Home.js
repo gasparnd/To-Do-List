@@ -1,6 +1,6 @@
 const Home = () => {
 	const view = `
-		<form>
+		<form class="to-do">
 			<input type="textarea" name="" id="activity" placeholder="Enter your note">
 			<input type="button" class="add-activity" id="add-activity-btn" value="add">
 		</form>

@@ -127,7 +127,7 @@ eval("/**\n * Copyright (c) 2014-present, Facebook, Inc.\n *\n * This source cod
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _routes_routes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./routes/routes */ \"./src/routes/routes.js\");\n\nwindow.addEventListener('load', _routes_routes__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/styles.css */ \"./src/styles/styles.css\");\n/* harmony import */ var _routes_routes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./routes/routes */ \"./src/routes/routes.js\");\n\n\nwindow.addEventListener('load', _routes_routes__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
@@ -151,7 +151,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nvar Error404 = function Error
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nvar Home = function Home() {\n  var view = \"\\n\\t\\t<div>\\n\\t\\t\\t<input type=\\\"textarea\\\" name=\\\"\\\" placeholder=\\\"Enter your note\\\">\\n\\t\\t</div>\\n\\t\\t<h2>Your List</h2>\\n\\t\\t<div>\\n\\t\\t\\t\\n\\t\\t</div>\\n\\t\";\n  return view;\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Home);\n\n//# sourceURL=webpack:///./src/pages/Home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nvar Home = function Home() {\n  var view = \"\\n\\t\\t<form class=\\\"to-do\\\">\\n\\t\\t\\t<input type=\\\"textarea\\\" name=\\\"\\\" id=\\\"activity\\\" placeholder=\\\"Enter your note\\\">\\n\\t\\t\\t<input type=\\\"button\\\" class=\\\"add-activity\\\" id=\\\"add-activity-btn\\\" value=\\\"add\\\">\\n\\t\\t</form>\\n\\t\\t<h2>Your List</h2>\\n\\t\\t<div class=\\\"to-do-container\\\">\\n\\t\\t\\t<ul class=\\\"to-do-list\\\" id=\\\"list\\\">\\n\\t\\t\\t\\t\\n\\t\\t\\t</ul>\\n\\t\\t</div>\\n\\t\";\n  return view;\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Home);\n\n//# sourceURL=webpack:///./src/pages/Home.js?");
 
 /***/ }),
 
@@ -163,7 +163,19 @@ eval("__webpack_require__.r(__webpack_exports__);\nvar Home = function Home() {\
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ \"./node_modules/@babel/runtime/regenerator/index.js\");\n/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ \"./node_modules/@babel/runtime/helpers/asyncToGenerator.js\");\n/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _templates_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../templates/Header */ \"./src/templates/Header.js\");\n/* harmony import */ var _pages_Home__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../pages/Home */ \"./src/pages/Home.js\");\n/* harmony import */ var _templates_Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../templates/Footer */ \"./src/templates/Footer.js\");\n/* harmony import */ var _pages_Error404__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../pages/Error404 */ \"./src/pages/Error404.js\");\n\n\n\n\n\n\n\nvar routes = /*#__PURE__*/function () {\n  var _ref = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {\n    var header, content, footer;\n    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {\n      while (1) {\n        switch (_context.prev = _context.next) {\n          case 0:\n            header =  false || document.getElementById('header');\n            content =  false || document.getElementById('content');\n            footer =  false || document.getElementById('footer');\n            _context.next = 5;\n            return Object(_templates_Header__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n\n          case 5:\n            header.innerHTML = _context.sent;\n            _context.next = 8;\n            return Object(_pages_Home__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n\n          case 8:\n            content.innerHTML = _context.sent;\n            _context.next = 11;\n            return Object(_templates_Footer__WEBPACK_IMPORTED_MODULE_4__[\"default\"])();\n\n          case 11:\n            footer.innerHTML = _context.sent;\n\n          case 12:\n          case \"end\":\n            return _context.stop();\n        }\n      }\n    }, _callee);\n  }));\n\n  return function routes() {\n    return _ref.apply(this, arguments);\n  };\n}();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (routes);\n\n//# sourceURL=webpack:///./src/routes/routes.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ \"./node_modules/@babel/runtime/regenerator/index.js\");\n/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ \"./node_modules/@babel/runtime/helpers/asyncToGenerator.js\");\n/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _templates_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../templates/Header */ \"./src/templates/Header.js\");\n/* harmony import */ var _pages_Home__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../pages/Home */ \"./src/pages/Home.js\");\n/* harmony import */ var _templates_Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../templates/Footer */ \"./src/templates/Footer.js\");\n/* harmony import */ var _pages_Error404__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../pages/Error404 */ \"./src/pages/Error404.js\");\n/* harmony import */ var _utils_to_do__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utils/to-do */ \"./src/utils/to-do.js\");\n\n\n\n\n\n\n\n\nvar routes = /*#__PURE__*/function () {\n  var _ref = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {\n    var header, content, footer, addBTN;\n    return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {\n      while (1) {\n        switch (_context.prev = _context.next) {\n          case 0:\n            header =  false || document.getElementById('header');\n            content =  false || document.getElementById('content');\n            footer =  false || document.getElementById('footer');\n            _context.next = 5;\n            return Object(_templates_Header__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n\n          case 5:\n            header.innerHTML = _context.sent;\n            _context.next = 8;\n            return Object(_pages_Home__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n\n          case 8:\n            content.innerHTML = _context.sent;\n            _context.next = 11;\n            return Object(_templates_Footer__WEBPACK_IMPORTED_MODULE_4__[\"default\"])();\n\n          case 11:\n            footer.innerHTML = _context.sent;\n            addBTN = document.getElementById('add-activity-btn');\n            addBTN.addEventListener('click', _utils_to_do__WEBPACK_IMPORTED_MODULE_6__[\"default\"]);\n\n          case 14:\n          case \"end\":\n            return _context.stop();\n        }\n      }\n    }, _callee);\n  }));\n\n  return function routes() {\n    return _ref.apply(this, arguments);\n  };\n}();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (routes);\n\n//# sourceURL=webpack:///./src/routes/routes.js?");
+
+/***/ }),
+
+/***/ "./src/styles/styles.css":
+/*!*******************************!*\
+  !*** ./src/styles/styles.css ***!
+  \*******************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack:///./src/styles/styles.css?");
 
 /***/ }),
 
@@ -188,6 +200,18 @@ eval("__webpack_require__.r(__webpack_exports__);\nvar Footer = function Footer(
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\nvar Header = function Header() {\n  var view = \"\\n\\t\\t<a target=\\\"_balnk\\\" href=\\\"https://github.com/gasparnd/\\\" class=\\\"user\\\">gasparnd</a>\\n\\t\";\n  return view;\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Header);\n\n//# sourceURL=webpack:///./src/templates/Header.js?");
+
+/***/ }),
+
+/***/ "./src/utils/to-do.js":
+/*!****************************!*\
+  !*** ./src/utils/to-do.js ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nvar addActivity = function addActivity() {\n  var text = document.getElementById('activity');\n  var activity = text.value;\n\n  if (activity === '') {\n    console.log(\"Error \".concat(activity));\n  } else if (activity) {\n    console.log(activity);\n    var activityContainer = document.createElement('div'); // add one class to activityContainer\n\n    activityContainer.classList.add('list-item'); // create li target\n\n    var newActivity = document.createElement('li'); // add text to li target\n\n    newActivity.innerText = activity; // add li target in the html section\n\n    activityContainer.appendChild(newActivity); // Check BTN\n\n    var doneBTN = document.createElement('i');\n    doneBTN.classList.add('done-activity');\n    doneBTN.classList.add('icon-check');\n    activityContainer.appendChild(doneBTN); // Delate BTN\n\n    var delateBTN = document.createElement('i');\n    delateBTN.classList.add('delate-activity');\n    delateBTN.classList.add('icon-trash');\n    activityContainer.appendChild(delateBTN); // get section from html\n\n    var list = document.getElementById('list');\n    list.appendChild(activityContainer);\n  }\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (addActivity);\n\n//# sourceURL=webpack:///./src/utils/to-do.js?");
 
 /***/ })
 
