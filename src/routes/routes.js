@@ -2,7 +2,7 @@ import Header from '../templates/Header'
 import Home from '../pages/Home'
 import Footer from '../templates/Footer'
 import Error404 from '../pages/Error404'
-import addActivity from '../utils/to-do'
+import toDo from '../utils/to-do'
 
 const routes = async () => {
 	const header = null || document.getElementById('header')
@@ -13,8 +13,8 @@ const routes = async () => {
 	content.innerHTML = await Home()
 	footer.innerHTML = await Footer()
 
-	const addBTN = document.getElementById('add-activity-btn')
-	addBTN.addEventListener('click', addActivity)
+	const addBTN = null || document.getElementById('add-activity-btn')
+	addBTN.addEventListener('click', toDo)
 }
 
 export default routes

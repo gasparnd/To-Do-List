@@ -54,6 +54,12 @@ main {
 .header {
 	display: flex;
 	justify-content: flex-end;
+	align-items: center;
+}
+
+.footer {
+	display: flex;
+	align-items: center;
 }
 
 .to-do {
@@ -74,6 +80,7 @@ main {
 	padding: 1rem;
 	margin-left: 1rem;
 	cursor: pointer;
+	border-radius: 5px;
 }
 
 .to-do-container {
@@ -96,17 +103,35 @@ main {
 }
 
 .list-item li {
-	background-color: red;
+	background-color: #eeeded;
 	padding: .5rem;
 	margin-right: 1rem;
-
+	border-radius: 5px;
 }
 
 .done-activity,
 .delate-activity {
-	width: 25px;
-	border: 1px solid blue;
-	margin: .5rem 0;
+	/*margin: .5rem 0;*/
 	margin-right: .5rem;
+	padding: .5rem;
+	border-radius: 5px;
 }
 
+.done-activity {
+	background-color: #0F9D58;
+}
+
+.delate-activity {
+	background-color: #DB4437;
+}
+
+.icon-check,
+.icon-trash {
+	font-size: 1.5rem;
+	color: #f6f5f5;
+}
+
+.done {
+	background-color: #0F9D58;
+	text-decoration: line-through;
+}
