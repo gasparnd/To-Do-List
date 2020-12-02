@@ -1,7 +1,7 @@
 import Header from '../templates/Header'
 import Home from '../pages/Home'
 import Footer from '../templates/Footer'
-import Error404 from '../pages/Error404'
+import validation from '../utils/mobile'
 import toDo from '../utils/to-do'
 
 const routes = async () => {
@@ -15,6 +15,12 @@ const routes = async () => {
 
 	const addBTN = null || document.getElementById('add-activity-btn')
 	addBTN.addEventListener('click', toDo)
+
+	const mobileMQ = window.matchMedia('screen and (max-width: 767px)')
+	validation(mobileMQ)
+	mobileMQ.addListener( () => {
+		validation(mobileMQ)
+	})
 }
 
 export default routes

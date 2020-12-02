@@ -46,7 +46,7 @@ body {
 main {
     height: 100vh;
 	display: grid;
-	grid-template-columns: 1250px;
+	grid-template-columns: 80rem;
 	grid-template-rows: 5rem 1fr 4rem;
     justify-content: center;
 }
@@ -172,6 +172,10 @@ main {
 		padding: 1rem;
 	}	
 
+	.user p {
+		display: none;
+	}
+
 	.input-container {
 		position: fixed;
 		bottom: -200vh;
@@ -183,12 +187,12 @@ main {
 		border-top-left-radius: 20px;
 		border-top-right-radius: 20px;
 		box-shadow: 0px -4px 24px 9px rgba(0,0,0,0.54);
-		transition: .400s;
+		transition: .200s;
 	} 
 
 	.show-input {
 		bottom: 0;
-		transition: .400s;
+		transition: .200s;
 	}
 
 	.to-do {
@@ -208,7 +212,7 @@ main {
 
 	.close-window {
 		width: 100%;
-		padding: 0 3rem;
+		padding: 3rem 3rem 0;
 		display: flex;
 		justify-content: flex-end;
 	}
@@ -217,7 +221,6 @@ main {
 		width: 1rem;
 		height: 1rem;
 		border-radius: 50px;
-		margin-top: 3rem;
 		background-color: #DB4437;
 	}
 

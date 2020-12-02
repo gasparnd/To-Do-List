@@ -46,7 +46,7 @@ body {
 main {
     height: 100vh;
 	display: grid;
-	grid-template-columns: 1250px;
+	grid-template-columns: 80rem;
 	grid-template-rows: 5rem 1fr 4rem;
     justify-content: center;
 }
@@ -55,6 +55,22 @@ main {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
+}
+
+.user {
+	display: flex;
+	text-decoration: none;
+	align-items: center;
+}
+
+.user p {
+	margin-right: 1rem;
+	color:;
+}
+
+.user img {
+	width: 50px;
+	border-radius: 50px;
 }
 
 .footer {
@@ -153,12 +169,16 @@ main {
 @media screen and (max-width: 767px) {
 	main {
 		grid-template-columns: 1fr;
+		padding: 1rem;
 	}	
 
+	.user p {
+		display: none;
+	}
+
 	.input-container {
-		border: 1px solid red;
 		position: fixed;
-		bottom: 0;
+		bottom: -200vh;
 		left: 15vw;
 		width: 70%;
 		height: 50vh;
@@ -167,12 +187,12 @@ main {
 		border-top-left-radius: 20px;
 		border-top-right-radius: 20px;
 		box-shadow: 0px -4px 24px 9px rgba(0,0,0,0.54);
-		display: none;
+		transition: .200s;
 	} 
 
 	.show-input {
 		bottom: 0;
-		display: block;
+		transition: .200s;
 	}
 
 	.to-do {
@@ -192,16 +212,16 @@ main {
 
 	.close-window {
 		width: 100%;
-		padding: 0 3rem;
+		padding: 3rem 3rem 0;
 		display: flex;
 		justify-content: flex-end;
 	}
 
 	#close-window {
-		width: 50px;
-		border-radius: 25px;
-		margin-top: 3rem;
-		border-bottom: 3px solid #DB4437;
+		width: 1rem;
+		height: 1rem;
+		border-radius: 50px;
+		background-color: #DB4437;
 	}
 
 	.to-do-mobile {
@@ -220,6 +240,7 @@ main {
 		font-size: 2rem;
 		padding: 1rem;
 		border-radius: 50px;
+		color: #4285F4;
 		background-color: white;
 		box-shadow: 4px 21px 50px 5px rgba(0,0,0,0.69);
 	}

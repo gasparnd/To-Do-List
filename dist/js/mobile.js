@@ -77,7 +77,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "dist/";
+/******/ 	__webpack_require__.p = "http://localhost:9080";
 /******/
 /******/
 /******/ 	// Load entry module and return exports
@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("/*const newActivityBTN = document.querySelector('.new-activity-mobile')*/\n\n/**/\nvar validation = function validation(media) {\n  var newActivityBTN = document.getElementById('activity-mobile');\n  var inputContainer = document.querySelector('.input-container');\n  var closeWindow = document.getElementById('close-window');\n\n  if (media.matches) {\n    console.log('ok');\n    newActivityBTN.addEventListener('click', function () {\n      return showInput(inputContainer);\n    });\n    closeWindow.addEventListener('click', function () {\n      return hideInput(inputContainer);\n    });\n  } else {\n    console.log('f');\n    newActivityBTN.removeEventListener('click', function () {\n      return showInput(inputContainer);\n    });\n    closeWindow.removeEventListener('click', function () {\n      return hideInput(inputContainer);\n    });\n  }\n};\n\nvar mobileMQ = window.matchMedia('screen and (max-width: 767px)');\nmobileMQ.addListener(validation);\nvalidation(mobileMQ);\n\nvar showInput = function showInput(inputContainer) {\n  console.log('ok');\n  inputContainer.classList.add('show-input');\n};\n\nvar hideInput = function hideInput(inputContainer) {\n  if (inputContainer.classList.contains('show-input')) {\n    inputContainer.classList.remove('show-input');\n  }\n};\n\n//# sourceURL=webpack:///./src/utils/mobile.js?");
+eval("var showInput = function showInput(inputContainer) {\n  console.log('ok');\n  inputContainer.classList.add('show-input');\n};\n\nvar hideInput = function hideInput(inputContainer) {\n  if (inputContainer.classList.contains('show-input')) {\n    inputContainer.classList.remove('show-input');\n  }\n};\n\nvar validation = function validation(media) {\n  var newActivityBTN = document.getElementById('activity-mobile');\n  var inputContainer = document.querySelector('.input-container');\n  var closeWindow = document.getElementById('close-window');\n\n  if (media.matches) {\n    console.log('ok');\n    newActivityBTN.addEventListener('click', function () {\n      return showInput(inputContainer);\n    });\n    closeWindow.addEventListener('click', function () {\n      return hideInput(inputContainer);\n    });\n  } else {\n    console.log('f');\n    newActivityBTN.removeEventListener('click', function () {\n      return showInput(inputContainer);\n    });\n    closeWindow.removeEventListener('click', function () {\n      return hideInput(inputContainer);\n    });\n  }\n};\n\nvar mobileMQ = window.matchMedia('screen and (max-width: 767px)');\nmobileMQ.addListener(function () {\n  validation(mobileMQ);\n});\n\n//# sourceURL=webpack:///./src/utils/mobile.js?");
 
 /***/ })
 

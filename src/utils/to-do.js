@@ -42,7 +42,7 @@ const toDo = () => {
 			const item = ev.target
 			if (item.classList[0] === 'delate-activity') {
 				const activityItem = item.parentElement
-				activityItem.classList.toggle('delate')
+				activityItem.classList.add('delate')
 			}
 		})
 
@@ -52,7 +52,7 @@ const toDo = () => {
 			const item = ev.target
 			if (item.classList[0] === 'done-activity') {
 				const activityItem = item.previousSibling
-				activityItem.classList.toggle('done')
+				activityItem.classList.add('done')
 			}	
 		})
 	}
