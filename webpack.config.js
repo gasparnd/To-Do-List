@@ -4,10 +4,13 @@ const HTMLWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
-	entry: path.resolve(__dirname, 'src/index.js'),
+	entry: {
+		main: path.resolve(__dirname, 'src/index.js'),
+		mobile: path.resolve(__dirname, 'src/utils/mobile.js')
+	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),
-		filename: 'js/main.js',
+		filename: 'js/[name].js',
 		publicPath: 'dist/'
 	},
 	devServer: {

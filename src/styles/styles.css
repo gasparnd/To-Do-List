@@ -57,6 +57,22 @@ main {
 	align-items: center;
 }
 
+.user {
+	display: flex;
+	text-decoration: none;
+	align-items: center;
+}
+
+.user p {
+	margin-right: 1rem;
+	color:;
+}
+
+.user img {
+	width: 50px;
+	border-radius: 50px;
+}
+
 .footer {
 	display: flex;
 	align-items: center;
@@ -140,4 +156,89 @@ main {
 
 .delate {
 	display: none;
+}
+
+.to-do-mobile {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	display: none;
+}
+
+@media screen and (max-width: 767px) {
+	main {
+		grid-template-columns: 1fr;
+		padding: 1rem;
+	}	
+
+	.input-container {
+		position: fixed;
+		bottom: -200vh;
+		left: 15vw;
+		width: 70%;
+		height: 50vh;
+		background-color: white;
+		z-index: 2;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+		box-shadow: 0px -4px 24px 9px rgba(0,0,0,0.54);
+		transition: .400s;
+	} 
+
+	.show-input {
+		bottom: 0;
+		transition: .400s;
+	}
+
+	.to-do {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#activity {
+		width: 50%;
+		margin: 2rem 0 1rem;
+	}
+
+	.add-activity {
+		width: auto;
+	}
+
+	.close-window {
+		width: 100%;
+		padding: 0 3rem;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	#close-window {
+		width: 1rem;
+		height: 1rem;
+		border-radius: 50px;
+		margin-top: 3rem;
+		background-color: #DB4437;
+	}
+
+	.to-do-mobile {
+		display: block;
+	}
+
+	.new-activity-mobile {
+		display: flex;
+		justify-content: center;
+		position: relative;
+		top: -2rem;
+		z-index: 1;
+	}
+
+	#activity-mobile {
+		font-size: 2rem;
+		padding: 1rem;
+		border-radius: 50px;
+		color: #4285F4;
+		background-color: white;
+		box-shadow: 4px 21px 50px 5px rgba(0,0,0,0.69);
+	}
 }
