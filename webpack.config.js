@@ -11,12 +11,12 @@ module.exports = {
 	output: {
 		path: path.resolve(__dirname, 'dist'),
 		filename: 'js/[name].js',
-		publicPath: 'dist'
+		
 	},
 	devServer: {
 		contentBase: 'dist/',
 		open: true,
-		port: '9080',
+		port: '9080'
 	},
 	module: {
 		rules: [
