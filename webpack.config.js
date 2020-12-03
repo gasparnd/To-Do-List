@@ -16,7 +16,9 @@ module.exports = {
 	devServer: {
 		contentBase: 'dist/',
 		/*open: true,*/
-		port: '9080'
+		port: '9080',/*
+		disableHostCheck: true,
+		host: '192.168.0.114'*/
 	},
 	module: {
 		rules: [

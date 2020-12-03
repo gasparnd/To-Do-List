@@ -1,8 +1,8 @@
 const showInput = inputContainer => {
-	console.log('ok')
+	/*console.log('ok')
 	if (inputContainer) {
 		console.log('exist')
-	}
+	}*/
 	inputContainer.classList.add('show-input')
 }
 
@@ -13,41 +13,23 @@ const hideInput = inputContainer => {
 }
 
 const validation = media => {
-	const newActivityBTN = document.getElementById('activity-mobile')
+	const newActivityBTN = document.getElementById('activity-mobile') 
 	const inputContainer = document.querySelector('.input-container')
 	const closeWindow = document.getElementById('close-window')
 	if (media.matches) {
-		console.log('ok enter')
+		/*console.log('ok enter')*/
+		
+		//show input on mobile
 		newActivityBTN.addEventListener('click', () => showInput(inputContainer))
+		//exit input on mobile
 		closeWindow.addEventListener('click', () => hideInput(inputContainer))
 	} else {
-		console.log('f')
+		/*console.log('f')*/
+
+		//remove events if not on mobile
 		newActivityBTN.removeEventListener('click', () => showInput(inputContainer))
 		closeWindow.removeEventListener('click', () => hideInput(inputContainer) )
 	}
 }
 
 export default validation
-
-/*const newActivityBTN = document.getElementById('activity-mobile')
-
-if (newActivityBTN) {
-	console.log('Existes')
-}*/
-
-/*const mobileMQ = window.matchMedia('screen and (max-width: 767px)')
-validation(mobileMQ)
-mobileMQ.addListener( () => {
-	validation(mobileMQ)
-})*/
-/*if (mobileMQ.matches) {
-	console.log('Match ok')
-	mobileMQ.addListener( () => {
-		validation(mobileMQ)
-	})
-	validation(mobileMQ)
-} else {
-	console.log('No Match')
-}*/
-
-

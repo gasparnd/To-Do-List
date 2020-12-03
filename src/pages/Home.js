@@ -15,11 +15,8 @@ const Home = () => {
 				
 			</ul>
 		</div>
-		<div class="to-do-mobile">
-			
-			<div class="new-activity-mobile">
-				<i class="icon-plus" id="activity-mobile"></i>
-			</div>
+		<div class="new-activity-mobile">
+			<i class="icon-plus" id="activity-mobile"></i>
 		</div>
 	`
 	return view
