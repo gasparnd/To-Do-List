@@ -11,14 +11,12 @@ module.exports = {
 	output: {
 		path: path.resolve(__dirname, 'dist'),
 		filename: 'js/[name].js',
-		publicPath: 'http://localhost:9080'
+		publicPath: 'dist'
 	},
 	devServer: {
 		contentBase: 'dist/',
-		/*open: true,*/
-		port: '9080',/*
-		disableHostCheck: true,
-		host: '192.168.0.114'*/
+		open: true,
+		port: '9080',
 	},
 	module: {
 		rules: [
