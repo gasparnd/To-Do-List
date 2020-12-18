@@ -191,7 +191,8 @@ main {
 	.input-container {
 		position: fixed;
 		bottom: -200vh;
-		width: 90%;
+		width: 100%;
+		left: 0;
 		height: 50vh;
 		background-color: white;
 		z-index: 2;
